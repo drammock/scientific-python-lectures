@@ -23,12 +23,25 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx_gallery.gen_gallery",
     "sphinx_copybutton",
+    "myst_parser",
 ]
 
 # See https://sphinx-copybutton.readthedocs.io/en/latest/use.html#automatic-exclusion-of-prompts-from-the-copies
 copybutton_prompt_text = r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
 copybutton_prompt_is_regexp = True
 copybutton_copy_empty_lines = False
+
+myst_enable_extensions = [
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "substitution",
+]  # "linkify"
+myst_substitutions = {
+    "release": "TODO INSERT RELEASE HERE",
+    "==>": "\u2794",
+}
+
 
 doctest_test_doctest_blocks = "true"
 
