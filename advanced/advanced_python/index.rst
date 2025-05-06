@@ -1,5 +1,3 @@
-.. |==>| unicode:: U+02794 .. thick rightwards arrow
-
 .. default-role:: py:obj
 
 ==========================
@@ -1015,25 +1013,25 @@ release, Python provides support in more places:
 
 * all file-like objects:
 
-  - `file` |==>| automatically closed
+  - `file` ➔ automatically closed
   - `fileinput`, `tempfile`
   - `bz2.BZ2File`, `gzip.GzipFile`,
     `tarfile.TarFile`, `zipfile.ZipFile`
-  - `ftplib`, `nntplib` |==>| close connection
+  - `ftplib`, `nntplib` ➔ close connection
 * locks
 
-  - `multiprocessing.RLock` |==>| lock and unlock
+  - `multiprocessing.RLock` ➔ lock and unlock
   - `multiprocessing.Semaphore`
-  - `memoryview` |==>| automatically release
-* `decimal.localcontext` |==>| modify precision of computations temporarily
-* `_winreg.PyHKEY <_winreg.OpenKey>` |==>| open and close hive key
-* `warnings.catch_warnings` |==>| kill warnings temporarily
-* `contextlib.closing` |==>| the same as the example above, call ``close``
+  - `memoryview` ➔ automatically release
+* `decimal.localcontext` ➔ modify precision of computations temporarily
+* `_winreg.PyHKEY <_winreg.OpenKey>` ➔ open and close hive key
+* `warnings.catch_warnings` ➔ kill warnings temporarily
+* `contextlib.closing` ➔ the same as the example above, call ``close``
 * parallel programming
 
-  - `concurrent.futures.ThreadPoolExecutor` |==>| invoke in parallel then kill thread pool
-  - `concurrent.futures.ProcessPoolExecutor` |==>| invoke in parallel then kill process pool
-  - `nogil` |==>| solve the GIL problem temporarily (cython only :( )
+  - `concurrent.futures.ThreadPoolExecutor` ➔ invoke in parallel then kill thread pool
+  - `concurrent.futures.ProcessPoolExecutor` ➔ invoke in parallel then kill process pool
+  - `nogil` ➔ solve the GIL problem temporarily (cython only :( )
 
 
 Catching exceptions
