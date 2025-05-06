@@ -142,17 +142,11 @@ iris data stored by scikit-learn. Suppose we want to recognize species of
 irises. The data consists of measurements of
 three different species of irises:
 
-.. |setosa_picture| image:: images/iris_setosa.jpg
-
-.. |versicolor_picture| image:: images/iris_versicolor.jpg
-
-.. |virginica_picture| image:: images/iris_virginica.jpg
-
-===================== ===================== =====================
-|setosa_picture|      |versicolor_picture|  |virginica_picture|
-===================== ===================== =====================
-Setosa Iris           Versicolor Iris       Virginica Iris
-===================== ===================== =====================
+=============================== =================================== ==================================
+image:: images/iris_setosa.jpg  image:: images/iris_versicolor.jpg  image:: images/iris_virginica.jpg
+=============================== =================================== ==================================
+Setosa Iris                     Versicolor Iris                     Virginica Iris
+=============================== =================================== ==================================
 
 
 .. topic:: **Quick Question:**

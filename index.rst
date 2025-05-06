@@ -69,32 +69,30 @@ Scientific Python Lectures
 
 .. Icons from https://fonts.google.com/icons
 
-.. |pdf-icon| image:: images/icon-pdf.svg
-   :width: 1em
-   :class: vcenter
-   :alt: PDF icon
-
-.. |html-icon| image:: images/icon-archive.svg
-   :width: 1em
-   :class: vcenter
-   :alt: Archive icon
-
-
-.. |github-icon| image:: images/icon-github.svg
-   :width: 1em
-   :class: vcenter
-   :alt: GitHub icon
-
-
 .. only:: html
 
     .. sidebar:: Download
 
-       |pdf-icon| `PDF, 2 pages per side <./_downloads/ScientificPythonLectures.pdf>`_
+       image:: images/icon-pdf.svg
+           :width: 1em
+           :class: vcenter
+           :alt: PDF icon
 
-       |pdf-icon| `PDF, 1 page per side <./_downloads/ScientificPythonLectures-simple.pdf>`_
+        `PDF, 2 pages per side <./_downloads/ScientificPythonLectures.pdf>`_
 
-       |github-icon| `Source code (github) <https://github.com/scipy-lectures/scientific-python-lectures>`_
+       image:: images/icon-pdf.svg
+           :width: 1em
+           :class: vcenter
+           :alt: PDF icon
+
+       `PDF, 1 page per side <./_downloads/ScientificPythonLectures-simple.pdf>`_
+
+        image:: images/icon-github.svg
+           :width: 1em
+           :class: vcenter
+           :alt: GitHub icon
+
+       `Source code (github) <https://github.com/scipy-lectures/scientific-python-lectures>`_
 
 
     Tutorials on the scientific Python ecosystem: a quick introduction to

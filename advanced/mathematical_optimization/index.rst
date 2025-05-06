@@ -70,15 +70,11 @@ to choose the right tool.
 Convex versus non-convex optimization
 ---------------------------------------
 
-.. |convex_1d_1| image:: auto_examples/images/sphx_glr_plot_convex_001.png
-
-.. |convex_1d_2| image:: auto_examples/images/sphx_glr_plot_convex_002.png
-
 .. list-table::
 
- * - |convex_1d_1|
+ * - image:: auto_examples/images/sphx_glr_plot_convex_001.png
 
-   - |convex_1d_2|
+   - image:: auto_examples/images/sphx_glr_plot_convex_002.png
 
  * - **A convex function**:
 
@@ -97,15 +93,11 @@ be very hard.**
 Smooth and non-smooth problems
 -------------------------------
 
-.. |smooth_1d_1| image:: auto_examples/images/sphx_glr_plot_smooth_001.png
-
-.. |smooth_1d_2| image:: auto_examples/images/sphx_glr_plot_smooth_002.png
-
 .. list-table::
 
- * - |smooth_1d_1|
+ * - image:: auto_examples/images/sphx_glr_plot_smooth_001.png
 
-   - |smooth_1d_2|
+   - image:: auto_examples/images/sphx_glr_plot_smooth_002.png
 
  * - **A smooth function**:
 
@@ -124,13 +116,11 @@ piece-wise linear functions).
 Noisy versus exact cost functions
 ----------------------------------
 
-.. |noisy| image:: auto_examples/images/sphx_glr_plot_noisy_001.png
-
 .. list-table::
 
  * - Noisy (blue) and non-noisy (green) functions
 
-   - |noisy|
+   - image:: auto_examples/images/sphx_glr_plot_noisy_001.png
 
 .. topic:: **Noisy gradients**
 
@@ -143,9 +133,6 @@ Noisy versus exact cost functions
 Constraints
 ------------
 
-.. |constraints| image:: auto_examples/images/sphx_glr_plot_constraints_001.png
-    :target: auto_examples/plot_constraints.html
-
 .. list-table::
 
  * - Optimizations under constraints
@@ -156,7 +143,8 @@ Constraints
 
      :math:`-1 < x_2 < 1`
 
-   - |constraints|
+   - image:: auto_examples/images/sphx_glr_plot_constraints_001.png
+         :target: auto_examples/plot_constraints.html
 
 
 A review of the different optimizers
@@ -184,34 +172,25 @@ Brent's method to find the minimum of a function:
     >>> x_min - 0.5
     np.float64(5.8...e-09)
 
-
-.. |1d_optim_1| image:: auto_examples/images/sphx_glr_plot_1d_optim_001.png
-   :scale: 90%
-
-.. |1d_optim_2| image:: auto_examples/images/sphx_glr_plot_1d_optim_002.png
-   :scale: 75%
-
-.. |1d_optim_3| image:: auto_examples/images/sphx_glr_plot_1d_optim_003.png
-   :scale: 90%
-
-.. |1d_optim_4| image:: auto_examples/images/sphx_glr_plot_1d_optim_004.png
-   :scale: 75%
-
 .. list-table:: **Brent's method on a quadratic function**: it
                 converges in 3 iterations, as the quadratic
                 approximation is then exact.
 
-   * - |1d_optim_1|
+   * - image:: auto_examples/images/sphx_glr_plot_1d_optim_001.png
+          :scale: 90%
 
-     - |1d_optim_2|
+     - image:: auto_examples/images/sphx_glr_plot_1d_optim_002.png
+           :scale: 75%
 
 .. list-table:: **Brent's method on a non-convex function**: note that
                 the fact that the optimizer avoided the local minimum
                 is a matter of luck.
 
-   * - |1d_optim_3|
+   * - image:: auto_examples/images/sphx_glr_plot_1d_optim_003.png
+           :scale: 90%
 
-     - |1d_optim_4|
+     - image:: auto_examples/images/sphx_glr_plot_1d_optim_004.png
+           :scale: 75%
 
 .. note::
 
@@ -234,26 +213,16 @@ Here we focus on **intuitions**, not code. Code will follow.
 basically consists in taking small steps in the direction of the
 gradient, that is the direction of the *steepest descent*.
 
-.. |gradient_quad_cond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_001.png
-   :scale: 90%
-
-.. |gradient_quad_cond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_020.png
-   :scale: 75%
-
-.. |gradient_quad_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_003.png
-   :scale: 90%
-
-.. |gradient_quad_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_022.png
-   :scale: 75%
-
 .. list-table:: **Fixed step gradient descent**
    :widths: 1 1 1
 
    * - **A well-conditioned quadratic function.**
 
-     - |gradient_quad_cond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_001.png
+           :scale: 90%
 
-     - |gradient_quad_cond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_020.png
+           :scale: 75%
 
    * - **An ill-conditioned quadratic function.**
 
@@ -261,9 +230,11 @@ gradient, that is the direction of the *steepest descent*.
        that the gradient tends not to point in the direction of the
        minimum.
 
-     - |gradient_quad_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_003.png
+           :scale: 90%
 
-     - |gradient_quad_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_022.png
+           :scale: 75%
 
 We can see that very anisotropic (`ill-conditioned
 <https://en.wikipedia.org/wiki/Condition_number>`_) functions are harder
@@ -279,57 +250,40 @@ Also, it clearly can be advantageous to take bigger steps. This
 is done in gradient descent code using a
 `line search <https://en.wikipedia.org/wiki/Line_search>`_.
 
-.. |agradient_quad_cond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_002.png
-   :scale: 90%
-
-.. |agradient_quad_cond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_021.png
-   :scale: 75%
-
-.. |agradient_quad_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_004.png
-   :scale: 90%
-
-.. |agradient_quad_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_023.png
-   :scale: 75%
-
-.. |agradient_gauss_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_005.png
-   :scale: 90%
-
-.. |agradient_gauss_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_024.png
-   :scale: 75%
-
-.. |agradient_rosen_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_006.png
-   :scale: 90%
-
-.. |agradient_rosen_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_025.png
-   :scale: 75%
-
-
 .. list-table:: **Adaptive step gradient descent**
    :widths: 1 1 1
 
    * - A well-conditioned quadratic function.
 
-     - |agradient_quad_cond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_002.png
+           :scale: 90%
 
-     - |agradient_quad_cond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_021.png
+           :scale: 75%
 
    * - An ill-conditioned quadratic function.
 
-     - |agradient_quad_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_004.png
+           :scale: 90%
 
-     - |agradient_quad_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_023.png
+           :scale: 75%
 
    * - An ill-conditioned non-quadratic function.
 
-     - |agradient_gauss_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_005.png
+           :scale: 90%
 
-     - |agradient_gauss_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_024.png
+           :scale: 75%
 
    * - An ill-conditioned very non-quadratic function.
 
-     - |agradient_rosen_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_006.png
+           :scale: 90%
 
-     - |agradient_rosen_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_025.png
+           :scale: 75%
 
 The more a function looks like a quadratic function (elliptic
 iso-curves), the easier it is to optimize.
@@ -347,33 +301,24 @@ it cross the valley. The conjugate gradient solves this problem by adding
 a *friction* term: each step depends on the two last values of the
 gradient and sharp turns are reduced.
 
-.. |cg_gauss_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_007.png
-   :scale: 90%
-
-.. |cg_gauss_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_026.png
-   :scale: 75%
-
-.. |cg_rosen_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_008.png
-   :scale: 90%
-
-.. |cg_rosen_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_027.png
-   :scale: 75%
-
-
 .. list-table:: **Conjugate gradient descent**
    :widths: 1 1 1
 
    * - An ill-conditioned non-quadratic function.
 
-     - |cg_gauss_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_007.png
+           :scale: 90%
 
-     - |cg_gauss_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_026.png
+           :scale: 75%
 
    * - An ill-conditioned very non-quadratic function.
 
-     - |cg_rosen_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_008.png
+           :scale: 90%
 
-     - |cg_rosen_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_027.png
+           :scale: 75%
 
 SciPy provides :func:`scipy.optimize.minimize` to find the minimum of scalar
 functions of one or more variables. The simple conjugate gradient method can
@@ -424,25 +369,6 @@ purpose, they rely on the 2 first derivative of the function: the
 *gradient* and the `Hessian
 <https://en.wikipedia.org/wiki/Hessian_matrix>`_.
 
-.. |ncg_quad_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_009.png
-   :scale: 90%
-
-.. |ncg_quad_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_028.png
-   :scale: 75%
-
-.. |ncg_gauss_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_010.png
-   :scale: 90%
-
-.. |ncg_gauss_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_029.png
-   :scale: 75%
-
-.. |ncg_rosen_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_011.png
-   :scale: 90%
-
-.. |ncg_rosen_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_030.png
-   :scale: 75%
-
-
 .. list-table::
    :widths: 1 1 1
 
@@ -451,9 +377,11 @@ purpose, they rely on the 2 first derivative of the function: the
        Note that, as the quadratic approximation is exact, the Newton
        method is blazing fast
 
-     - |ncg_quad_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_009.png
+           :scale: 90%
 
-     - |ncg_quad_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_028.png
+           :scale: 75%
 
    * - **An ill-conditioned non-quadratic function:**
 
@@ -461,15 +389,19 @@ purpose, they rely on the 2 first derivative of the function: the
        quadratic approximation. As a result, the Newton method overshoots
        and leads to oscillations.
 
-     - |ncg_gauss_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_010.png
+           :scale: 90%
 
-     - |ncg_gauss_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_029.png
+           :scale: 75%
 
    * - **An ill-conditioned very non-quadratic function:**
 
-     - |ncg_rosen_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_011.png
+           :scale: 90%
 
-     - |ncg_rosen_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_030.png
+           :scale: 75%
 
 In SciPy, you can use the Newton method by setting ``method`` to Newton-CG in
 :func:`scipy.optimize.minimize`. Here, CG refers to the fact that an internal
@@ -528,17 +460,6 @@ Quasi-Newton methods: approximating the Hessian on the fly
 **BFGS**: BFGS (Broyden-Fletcher-Goldfarb-Shanno algorithm) refines at
 each step an approximation of the Hessian.
 
-.. |bfgs_quad_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_012.png
-   :scale: 90%
-
-.. |bfgs_quad_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_031.png
-   :scale: 75%
-
-.. |bfgs_gauss_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_013.png
-   :scale: 90%
-
-.. |bfgs_gauss_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_032.png
-   :scale: 75%
 
 Full code examples
 ==================
@@ -549,14 +470,6 @@ Full code examples
 .. include:: auto_examples/index.rst
    :start-line: 1
 
-
-.. |bfgs_rosen_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_014.png
-   :scale: 90%
-
-.. |bfgs_rosen_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_033.png
-   :scale: 75%
-
-
 .. list-table::
    :widths: 1 1 1
 
@@ -565,24 +478,30 @@ Full code examples
        On a exactly quadratic function, BFGS is not as fast as Newton's
        method, but still very fast.
 
-     - |bfgs_quad_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_012.png
+           :scale: 90%
 
-     - |bfgs_quad_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_031.png
+           :scale: 75%
 
    * - **An ill-conditioned non-quadratic function:**
 
        Here BFGS does better than Newton, as its empirical estimate of the
        curvature is better than that given by the Hessian.
 
-     - |bfgs_gauss_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_013.png
+           :scale: 90%
 
-     - |bfgs_gauss_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_032.png
+           :scale: 75%
 
    * - **An ill-conditioned very non-quadratic function:**
 
-     - |bfgs_rosen_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_014.png
+           :scale: 90%
 
-     - |bfgs_rosen_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_033.png
+           :scale: 75%
 
 ::
 
@@ -632,26 +551,6 @@ A shooting method: the Powell algorithm
 
 Almost a gradient approach
 
-.. |powell_quad_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_015.png
-   :scale: 90%
-
-.. |powell_quad_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_034.png
-   :scale: 75%
-
-.. |powell_gauss_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_016.png
-   :scale: 90%
-
-.. |powell_gauss_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_035.png
-   :scale: 75%
-
-
-.. |powell_rosen_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_017.png
-   :scale: 90%
-
-.. |powell_rosen_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_036.png
-   :scale: 75%
-
-
 .. list-table::
    :widths: 1 1 1
 
@@ -660,15 +559,19 @@ Almost a gradient approach
        Powell's method isn't too sensitive to local ill-conditionning in
        low dimensions
 
-     - |powell_quad_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_015.png
+           :scale: 90%
 
-     - |powell_quad_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_034.png
+           :scale: 75%
 
    * - **An ill-conditioned very non-quadratic function:**
 
-     - |powell_rosen_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_017.png
+           :scale: 90%
 
-     - |powell_rosen_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_036.png
+           :scale: 75%
 
 
 Simplex method: the Nelder-Mead
@@ -685,34 +588,24 @@ smooth such as experimental data points, as long as they display a
 large-scale bell-shape behavior. However it is slower than gradient-based
 methods on smooth, non-noisy functions.
 
-.. |nm_gauss_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_018.png
-   :scale: 90%
-
-.. |nm_gauss_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_037.png
-   :scale: 75%
-
-
-.. |nm_rosen_icond| image:: auto_examples/images/sphx_glr_plot_gradient_descent_019.png
-   :scale: 90%
-
-.. |nm_rosen_icond_conv| image:: auto_examples/images/sphx_glr_plot_gradient_descent_038.png
-   :scale: 75%
-
-
 .. list-table::
    :widths: 1 1 1
 
    * - **An ill-conditioned non-quadratic function:**
 
-     - |nm_gauss_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_018.png
+           :scale: 90%
 
-     - |nm_gauss_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_037.png
+           :scale: 75%
 
    * - **An ill-conditioned very non-quadratic function:**
 
-     - |nm_rosen_icond|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_019.png
+           :scale: 90%
 
-     - |nm_rosen_icond_conv|
+     - image:: auto_examples/images/sphx_glr_plot_gradient_descent_038.png
+           :scale: 75%
 
 Using the Nelder-Mead solver in :func:`scipy.optimize.minimize`::
 
@@ -831,14 +724,6 @@ handy.
 Synthetic exercises
 -------------------
 
-.. |flat_min_0| image:: auto_examples/images/sphx_glr_plot_exercise_flat_minimum_001.png
-    :scale: 48%
-    :target: auto_examples/plot_exercise_flat_minimum.html
-
-.. |flat_min_1| image:: auto_examples/images/sphx_glr_plot_exercise_flat_minimum_002.png
-    :scale: 48%
-    :target: auto_examples/plot_exercise_flat_minimum.html
-
 .. image:: auto_examples/images/sphx_glr_plot_exercise_ill_conditioned_001.png
     :scale: 35%
     :target: auto_examples/plot_exercise_ill_conditioned.html
@@ -865,7 +750,15 @@ Synthetic exercises
     a minimum in (0, 0). Starting from an initialization at (1, 1), try
     to get within 1e-8 of this minimum point.
 
-    .. centered:: |flat_min_0| |flat_min_1|
+    image:: auto_examples/images/sphx_glr_plot_exercise_flat_minimum_001.png
+        :scale: 48%
+        :target: auto_examples/plot_exercise_flat_minimum.html
+        :class: centered
+
+    image:: auto_examples/images/sphx_glr_plot_exercise_flat_minimum_002.png
+        :scale: 48%
+        :target: auto_examples/plot_exercise_flat_minimum.html
+        :class: centered
 
 
 Special case: non-linear least-squares
@@ -1037,7 +930,4 @@ Full code examples
     SciPy tries to include the best well-established, general-use,
     and permissively-licensed optimization algorithms available. However,
     even better options for a given task may be available in other libraries;
-    please also see IPOPT_ and PyGMO_.
-
-.. _IPOPT: https://github.com/xuy/pyipopt
-.. _PyGMO: https://esa.github.io/pygmo2/
+    please also see `IPOPT <https://github.com/xuy/pyipopt>`__ and `PyGMO <https://esa.github.io/pygmo2/>`__.
