@@ -16,8 +16,10 @@ How to contribute
    :depth: 1
 
 
-Make sure to read this `Documentation style guide`_ as well as these
-`tips, tricks`_ and conventions about documentation content and workflows.
+Make sure to read this
+`Documentation style guide <https://documentation-style-guide-sphinx.readthedocs.org/en/latest/style-guide.html>`__
+as well as these `tips, tricks <https://docness.readthedocs.org/en/latest/index.html>`__
+and conventions about documentation content and workflows.
 
 
 How to contribute ?
@@ -198,6 +200,3 @@ Admonitions
 
 References
 ==========
-
-.. _`Documentation style guide`: https://documentation-style-guide-sphinx.readthedocs.org/en/latest/style-guide.html
-.. _`tips, tricks`: https://docness.readthedocs.org/en/latest/index.html
