@@ -60,7 +60,7 @@ pyplot
 
 .. tip::
 
-    *pyplot* provides a procedural interface to the matplotlib object-oriented
+    ``pyplot`` provides a procedural interface to the matplotlib object-oriented
     plotting library. It is modeled closely after Matlab™. Therefore, the
     majority of plotting commands in pyplot have Matlab™ analogs with similar
     arguments.  Important commands are explained with interactive examples.
