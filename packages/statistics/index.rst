@@ -46,8 +46,6 @@ Statistics in Python
    statistics.
 
 
-|
-
 .. tip::
 
     **Why Python for statistics?**
@@ -68,8 +66,6 @@ Statistics in Python
 
     In this document, the Python inputs are represented with the sign
     ">>>".
-
-    |
 
     **Disclaimer: Gender questions**
 
@@ -136,8 +132,6 @@ data are a mixture of numerical and categorical values::
    don't specify the missing value (NA = not available) marker, we will
    not be able to do statistical analysis.
 
-|
-
 **Creating from arrays**: A :class:`pandas.DataFrame` can also be seen
 as a dictionary of 1D 'series', eg arrays or lists. If we have 3
 ``numpy`` arrays::
@@ -162,13 +156,9 @@ We can expose them as a :class:`pandas.DataFrame`::
     8  -0.947368 -0.811882  0.583822
     ...
 
-|
-
 **Other inputs**: `pandas <https://pandas.pydata.org>`__ can input data from
 SQL, excel files, or other formats. See the `pandas documentation
 <https://pandas.pydata.org>`__.
-
-|
 
 Manipulating data
 ..................
@@ -198,8 +188,6 @@ Manipulating data
 .. note:: For a quick view on a large dataframe, use its `describe`
     method: :meth:`pandas.DataFrame.describe`.
 
-|
-
 **groupby**: splitting a dataframe on values of categorical variables::
 
     >>> groupby_gender = data.groupby('Gender')
@@ -228,8 +216,6 @@ operations on the resulting group of dataframes::
     applied.
 
 
-|
-
 .. image:: auto_examples/images/sphx_glr_plot_pandas_001.png
    :target: auto_examples/plot_pandas.html
    :align: right
@@ -252,8 +238,6 @@ operations on the resulting group of dataframes::
 
    `groupby_gender.boxplot` is used for the plots above (see `this
    example <auto_examples/plot_pandas.html>`_).
-
-|
 
 Plotting data
 ..............
@@ -439,8 +423,6 @@ Accordingly, we can perform a nonparametric version of the test with
    **Conclusion**: we find that the data does not support the hypothesis
    that males and females have different VIQ.
 
-|
-
 Linear models, multiple factors, and analysis of variance
 ==========================================================
 
@@ -468,8 +450,6 @@ where `e` is observation noise. We will use the `statsmodels
 
 #. Test that `coef` is non zero.
 
-|
-
 First, we generate simulated data according to the model::
 
     >>> import numpy as np
@@ -485,8 +465,6 @@ First, we generate simulated data according to the model::
 
    `See the statsmodels documentation
    <https://www.statsmodels.org/stable/example_formulas.html>`_
-
-|
 
 Then we specify an OLS model and fit it::
 
@@ -539,8 +517,6 @@ We can inspect the various statistics derived from the fit::
 
    Retrieve the estimated parameters from the model above. **Hint**:
    use tab-completion to find the relevant attribute.
-
-|
 
 Categorical variables: comparing groups or multiple categories
 ...............................................................
@@ -603,8 +579,6 @@ model::
      (https://www.statsmodels.org/devel/contrasts.html).
 
 
-|
-
 .. topic:: **Link to t-tests between different FSIQ and PIQ**
 
     To compare different types of IQ, we need to create a "long-form"
@@ -657,8 +631,6 @@ Multiple Regression: including multiple factors
    :scale: 45
    :align: right
 
-|
-
 Consider a linear model explaining a variable `z` (the dependent
 variable) with 2 variables `x` and `y`:
 
@@ -666,9 +638,6 @@ variable) with 2 variables `x` and `y`:
 
 Such a model can be seen in 3D as fitting a plane to a cloud of (`x`,
 `y`, `z`) points.
-
-|
-|
 
 **Example: the iris data** (:download:`examples/iris.csv`)
 
@@ -715,8 +684,6 @@ Such a model can be seen in 3D as fitting a plane to a cloud of (`x`,
     Notes:
     [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
-|
-
 Post-hoc hypothesis testing: analysis of variance (ANOVA)
 ----------------------------------------------------------
 
@@ -735,8 +702,6 @@ test ``"name[T.versicolor] - name[T.virginica]"``, with an `F-test
 
 Is this difference significant?
 
-|
-
 
 .. topic:: **Exercise**
    :class: green
@@ -744,8 +709,6 @@ Is this difference significant?
    Going back to the brain size + IQ data, test if the VIQ of male and
    female are different after removing the effect of brain size, height
    and weight.
-
-|
 
 More visualization: seaborn for statistical exploration
 =======================================================
@@ -884,8 +847,6 @@ Do wages increase more with education for males than females?
 
 Can we conclude that education benefits males more than females?
 
-|
-
 .. topic:: **Take home messages**
 
    * Hypothesis testing and p-values give you the **significance** of an
@@ -900,8 +861,6 @@ Can we conclude that education benefits males more than females?
    * **Conditionning** (adding factors that can explain all or part of
      the variation) is an important modeling aspect that changes the
      interpretation.
-
-|
 
 .. include the gallery. Skip the first line to avoid the "orphan"
    declaration

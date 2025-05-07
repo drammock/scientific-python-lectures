@@ -1024,11 +1024,7 @@ Try to do the same from scratch !
 
 Click on figure for solution.
 
-|
-
 ____
-
-|
 
 .. topic:: **Quick read**
 

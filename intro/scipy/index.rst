@@ -903,8 +903,6 @@ and offers utilities to handle them. Some important functions are:
 * :func:`scipy.fft.ifft` to compute the inverse FFT, from frequency
   space to signal space
 
-|
-
 As an illustration, a (noisy) input signal (``sig``), and its FFT::
 
     >>> sig_fft = sp.fft.fft(sig)  # doctest:+SKIP
@@ -949,8 +947,6 @@ the FFT with :func:`scipy.fft.ifft`, gives a filtered signal.
    the SciPy one
    should be preferred, as it uses more efficient underlying implementations.
 
-|
-
 **Fully worked examples:**
 
 .. |periodicity_finding| image:: auto_examples/solutions/images/sphx_glr_plot_periodicity_finder_001.png
@@ -966,8 +962,6 @@ Crude periodicity finding (:ref:`link <sphx_glr_intro_scipy_auto_examples_soluti
 =================================================================================================================== ===================================================================================================================
 |periodicity_finding|                                                                                               |image_blur|
 =================================================================================================================== ===================================================================================================================
-
-|
 
 .. topic:: Exercise: Denoise moon landing image
    :class: green
@@ -993,8 +987,6 @@ Crude periodicity finding (:ref:`link <sphx_glr_intro_scipy_auto_examples_soluti
    5. Apply the inverse Fourier transform to see the resulting image.
 
    :ref:`Solution <sphx_glr_intro_scipy_auto_examples_solutions_plot_fft_image_denoise.py>`
-
-|
 
 
 Signal processing: :mod:`scipy.signal`

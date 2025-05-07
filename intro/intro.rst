@@ -147,8 +147,6 @@ Unlike Matlab, or R, Python does not come with a pre-bundled set
 of modules for scientific computing. Below are the basic building blocks
 that can be combined to obtain a scientific computing environment:
 
-|
-
 **Python**, a generic and modern computing language
 
 * The language: flow control, data types (``string``, ``int``),
@@ -372,8 +370,6 @@ commands:
 
     In [2]: x = 10
 
-|
-
 **Tab completion** Tab completion, is a convenient way to explore the
 structure of any object you’re dealing with. Simply type object_name.<TAB> to
 view the object’s attributes. Besides Python objects and keywords, tab
@@ -388,8 +384,6 @@ completion also works on file and directory names.*
               as_integer_ratio() conjugate()        imag               to_bytes()
               bit_count()        denominator        numerator
               bit_length()       from_bytes()       real
-
-|
 
 **Magic functions**
 The console and the notebooks support so-called *magic* functions by prefixing a command with the
@@ -454,8 +448,6 @@ Other useful magic functions are:
       ipdb>
 
   .. seealso:: :ref:`Chapter on debugging <debugging_chapter>`
-
-|
 
 **Aliases**
 Furthermore IPython ships with various *aliases* which emulate common UNIX

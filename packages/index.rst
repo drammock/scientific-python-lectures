@@ -6,8 +6,6 @@ Packages and applications
 This part of the *Scientific Python Lectures* is dedicated to various
 scientific packages useful for extended needs.
 
-|
-
 
 .. include:: ../includes/big_toc_css.rst
    :start-line: 1

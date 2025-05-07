@@ -7,8 +7,6 @@ This part of the *Scientific Python Lectures* is dedicated to advanced usage.
 It strives to educate the proficient Python coder to be an expert and
 tackles various specific topics.
 
-|
-
 .. include:: ../includes/big_toc_css.rst
    :start-line: 1
 

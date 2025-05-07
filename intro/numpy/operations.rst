@@ -420,9 +420,9 @@ Broadcasting
 
 * This works on arrays of the same size.
 
-    | **Nevertheless**, It's also possible to do operations on arrays of different
-    | sizes if *NumPy* can transform these arrays so that they all have
-    | the same size: this conversion is called **broadcasting**.
+    **Nevertheless**, It's also possible to do operations on arrays of different
+    sizes if *NumPy* can transform these arrays so that they all have
+    the same size: this conversion is called **broadcasting**.
 
 The image below gives an example of broadcasting:
 

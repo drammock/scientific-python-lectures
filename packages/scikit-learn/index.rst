@@ -91,8 +91,6 @@ it's a blue or a red point.
 
    A regression problem
 
-|
-
 The next simple task we'll look at is a **regression** task: a simple
 best-fit line to a set of data.
 
@@ -1329,8 +1327,6 @@ in 2D enables visualization::
     As :class:`~sklearn.manifold.TSNE` cannot be applied to new data, we
     need to use its `fit_transform` method.
 
-|
-
 :class:`sklearn.manifold.TSNE` separates quite well the different classes
 of digits even though it had no access to the class information.
 
@@ -1733,8 +1729,6 @@ For this reason, it is recommended to split the data into three sets:
 Many machine learning practitioners do not separate test set and
 validation set. But if your goal is to gauge the error of a model on
 unknown data, using an independent test set is vital.
-
-|
 
 .. include:: auto_examples/index.rst
     :start-line: 1

@@ -109,8 +109,6 @@ Scientific Python Lectures
 
             preface.rst
 
-|
-
 .. rst-class:: tune
 
   .. toctree::
@@ -120,8 +118,6 @@ Scientific Python Lectures
     advanced/index.rst
     packages/index.rst
     about.rst
-
-|
 
 ..
  FIXME: I need the link below to make sure the banner gets copied to the
