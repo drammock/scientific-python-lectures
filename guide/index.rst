@@ -196,13 +196,6 @@ Admonitions
 
    This is a warning
 
-Clearing floats
-================
-
-Figures positioned with `:align: right` are float. To flush them, use::
-
-    |clear-floats|
-
 References
 ==========
 

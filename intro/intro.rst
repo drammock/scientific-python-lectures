@@ -213,8 +213,6 @@ and many more packages not documented in the Scientific Python Lectures.
 
    :ref:`chapters on packages and applications <applications_part>`
 
-|clear-floats|
-
 ..
     >>> import numpy as np
 

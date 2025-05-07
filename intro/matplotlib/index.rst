@@ -135,8 +135,6 @@ Plotting with default settings
     color and style, axes, axis and grid properties, text and font
     properties and so on.
 
-|clear-floats|
-
 ::
 
    import numpy as np
@@ -171,8 +169,6 @@ that influence the appearance of the plot.
     The settings have been explicitly set to their default values, but
     now you can interactively play with the values to explore their
     affect (see `Line properties`_ and `Line styles`_ below).
-
-|clear-floats|
 
 ::
 
@@ -232,8 +228,6 @@ Changing colors and line widths
     slightly thicker line for both of them. We'll also slightly alter the figure
     size to make it more horizontal.
 
-|clear-floats|
-
 ::
 
    ...
@@ -260,8 +254,6 @@ Setting limits
 
     Current limits of the figure are a bit too tight and we want to make
     some space in order to clearly see all data points.
-
-|clear-floats|
 
 ::
 
@@ -292,8 +284,6 @@ Setting ticks
     Current ticks are not ideal because they do not show the interesting values
     (:math:`\pm \pi`,:math:`\pm \pi`/2) for sine and cosine. We'll change them such that they show
     only these values.
-
-|clear-floats|
 
 ::
 
@@ -329,8 +319,6 @@ Setting tick labels
     explicit. When we set tick values, we can also provide a
     corresponding label in the second argument list. Note that we'll use
     latex to allow for nice rendering of the label.
-
-|clear-floats|
 
 ::
 
@@ -369,8 +357,6 @@ Moving spines
     by setting their color to none and we'll move the bottom and left
     ones to coordinate 0 in data space coordinates.
 
-|clear-floats|
-
 ::
 
    ...
@@ -406,8 +392,6 @@ Adding a legend
     adding the keyword argument label (that will be used in the legend
     box) to the plot commands.
 
-|clear-floats|
-
 ::
 
    ...
@@ -440,8 +424,6 @@ Annotate some points
     cosine. We'll first draw a marker on the curve as well as a straight
     dotted line. Then, we'll use the annotate command to display some
     text with an arrow.
-
-|clear-floats|
 
 ::
 
@@ -486,8 +468,6 @@ Devil is in the details
     lines. We can make them bigger and we can also adjust their
     properties such that they'll be rendered on a semi-transparent white
     background. This will allow us to see both the data and the labels.
-
-|clear-floats|
 
 ::
 
@@ -570,8 +550,6 @@ Subplots
 
 .. avoid an ugly interplay between 'tip' and the images below: we want a
    line-return
-
-|clear-floats|
 
 .. image:: auto_examples/images/sphx_glr_plot_subplot-horizontal_001.png
    :scale: 25
@@ -753,8 +731,6 @@ adding labels for red bars.
 .. hint::
 
    You need to take care of text alignment.
-
-|clear-floats|
 
 ::
 

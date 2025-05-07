@@ -1599,8 +1599,6 @@ with this type of learning curve, we can expect that adding more
 training data will not help: both lines converge to a
 relatively low score.
 
-|clear-floats|
-
 **When the learning curves have converged to a low score, we have a
 high bias model.**
 
@@ -1630,8 +1628,6 @@ training score is much higher than the validation score. As we add more
 samples to this training set, the training score will continue to
 decrease, while the cross-validation error will continue to increase, until they
 meet in the middle.
-
-|clear-floats|
 
 **Learning curves that have not yet converged with the full training
 set indicate a high-variance, over-fit model.**
