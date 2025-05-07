@@ -880,18 +880,15 @@ Integration of the system follows::
 
     With the option `method='LSODA'`, :func:`scipy.integrate.solve_ivp` uses the LSODA
     (Livermore Solver for Ordinary Differential equations with Automatic method switching
-    for stiff and non-stiff problems). See the `ODEPACK Fortran library`_ for more details.
-
-.. _`ODEPACK Fortran library` : https://people.sc.fsu.edu/~jburkardt/f77_src/odepack/odepack.html
+    for stiff and non-stiff problems). See the
+    `ODEPACK Fortran library <https://people.sc.fsu.edu/~jburkardt/f77_src/odepack/odepack.html>`__
+    for more details.
 
 .. seealso:: **Partial Differental Equations**
 
     There is no Partial Differential Equations (PDE) solver in SciPy.
-    Some Python packages for solving PDE's are available, such as fipy_
-    or SfePy_.
-
-.. _fipy: https://www.ctcms.nist.gov/fipy/
-.. _SfePy: https://sfepy.org/doc/
+    Some Python packages for solving PDE's are available, such as
+    `fipy <https://www.ctcms.nist.gov/fipy/>`__ or `SfePy <https://sfepy.org/doc/>`__.
 
 Fast Fourier transforms: :mod:`scipy.fft`
 ---------------------------------------------
