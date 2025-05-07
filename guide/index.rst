@@ -199,7 +199,5 @@ Admonitions
 References
 ==========
 
-.. target-notes::
-
 .. _`Documentation style guide`: https://documentation-style-guide-sphinx.readthedocs.org/en/latest/style-guide.html
 .. _`tips, tricks`: https://docness.readthedocs.org/en/latest/index.html
